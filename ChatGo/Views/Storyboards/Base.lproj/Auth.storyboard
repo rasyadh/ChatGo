@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jnq-0f-IWK">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="3LV-Gz-RsF">
+            <objects>
+                <viewController storyboardIdentifier="LoginViewController" id="jnq-0f-IWK" customClass="LoginViewController" customModule="ChatGo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="usb-AJ-ERk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wrG-vA-Qac">
+                                <rect key="frame" x="24" y="84" width="82" height="39"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="32"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nYK-1G-Vqn">
+                                <rect key="frame" x="24" y="147" width="40" height="19"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your display name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kCb-o0-HcO">
+                                <rect key="frame" x="24" y="174" width="327" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="bJz-hI-MmL"/>
+                                </constraints>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C4k-mZ-zIb">
+                                <rect key="frame" x="80" y="238" width="215" height="48"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="jPb-O1-4QV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                <state key="normal" title="Get Started">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="loginTouchUpInside:" destination="jnq-0f-IWK" eventType="touchUpInside" id="EhG-J4-d1n"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="wrG-vA-Qac" firstAttribute="top" secondItem="VfB-H9-pcD" secondAttribute="top" constant="64" id="0mP-K0-QyF"/>
+                            <constraint firstItem="C4k-mZ-zIb" firstAttribute="leading" secondItem="VfB-H9-pcD" secondAttribute="leading" constant="80" id="8qU-U5-Mxj"/>
+                            <constraint firstItem="nYK-1G-Vqn" firstAttribute="top" secondItem="wrG-vA-Qac" secondAttribute="bottom" constant="24" id="RG2-lI-ThG"/>
+                            <constraint firstItem="C4k-mZ-zIb" firstAttribute="centerX" secondItem="VfB-H9-pcD" secondAttribute="centerX" id="eeB-ui-CaY"/>
+                            <constraint firstItem="kCb-o0-HcO" firstAttribute="leading" secondItem="VfB-H9-pcD" secondAttribute="leading" constant="24" id="li3-r2-MR4"/>
+                            <constraint firstItem="C4k-mZ-zIb" firstAttribute="top" secondItem="kCb-o0-HcO" secondAttribute="bottom" constant="16" id="nhG-UC-Sep"/>
+                            <constraint firstItem="VfB-H9-pcD" firstAttribute="trailing" secondItem="kCb-o0-HcO" secondAttribute="trailing" constant="24" id="nyV-Ed-BaS"/>
+                            <constraint firstItem="kCb-o0-HcO" firstAttribute="top" secondItem="nYK-1G-Vqn" secondAttribute="bottom" constant="8" id="uVP-sf-k6K"/>
+                            <constraint firstItem="nYK-1G-Vqn" firstAttribute="leading" secondItem="VfB-H9-pcD" secondAttribute="leading" constant="24" id="vuq-5S-6Kw"/>
+                            <constraint firstItem="wrG-vA-Qac" firstAttribute="leading" secondItem="VfB-H9-pcD" secondAttribute="leading" constant="24" id="wuE-7I-5oJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="VfB-H9-pcD"/>
+                    </view>
+                    <connections>
+                        <outlet property="loginButton" destination="C4k-mZ-zIb" id="kPr-cu-94t"/>
+                        <outlet property="nameField" destination="kCb-o0-HcO" id="Emj-gP-4lp"/>
+                        <outlet property="nameLabel" destination="nYK-1G-Vqn" id="2ZS-62-ODb"/>
+                        <outlet property="titleLabel" destination="wrG-vA-Qac" id="cj0-pM-Dwq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wrt-W1-WOS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-530" y="275"/>
+        </scene>
+    </scenes>
+</document>

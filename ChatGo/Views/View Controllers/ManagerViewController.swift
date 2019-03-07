@@ -19,7 +19,7 @@ public class ManagerViewController: UIViewController {
     
     private let CHILD_KEY = 1000000
     private let CHILD_LOGIN_KEY = "AuthViewController"
-    private let CHILD_HOME_KEY = "MainViewController"
+    private let CHILD_HOME_KEY = "HomeViewController"
     
     // Change status bar style to light
     public override var preferredStatusBarStyle: UIStatusBarStyle {

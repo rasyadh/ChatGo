@@ -19,7 +19,7 @@ class Localify: NSObject {
     var languageIdentifier = ""
     
     func setLanguage(_ name: LanguageName) {
-        let path = Bundle.main.path(forResource: name.rawValue, ofType:      ".lproj")!
+        let path = Bundle.main.path(forResource: name.rawValue, ofType: ".lproj")!
         let bundle = Bundle(path: path)!
         languageBundle = bundle
         languageIdentifier = name == .english ? "en_US" : "id_ID"

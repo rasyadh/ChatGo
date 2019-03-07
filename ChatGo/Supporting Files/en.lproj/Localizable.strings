@@ -1,0 +1,14 @@
+/* 
+  Localizable.strings
+  ChatGo
+
+  Created by Rasyadh Abdul Aziz on 07/03/19.
+  Copyright © 2019 rasyadh. All rights reserved.
+*/
+
+"app.name" = "ChatGo";
+
+// Auth Screen
+"auth.label.name" = "Choose a display name";
+"auth.field.placeholder.name" = "Your display name";
+"auth.button.login" = "Get Started";
